@@ -2,6 +2,7 @@
 
 allowedPostUpgradeCommands:
   - "^corepack use"
+  - "^deno task lume upgrade --version"
   - "^pnpm install --frozen-lockfile --ignore-scripts$"
   - "^pnpm run build$"
 onboardingConfigFileName: .renovaterc.json
