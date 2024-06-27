@@ -1,0 +1,34 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:best-practices",
+		":disableRateLimiting",
+		":disablePrControls",
+		":prHourlyLimitNone",
+		":semanticCommits",
+		"customManagers:githubActionsVersions",
+		"security:openssf-scorecard"
+	],
+	"platformAutomerge": true,
+	"automergeStrategy": "squash",
+	"automergeType": "branch",
+	"assigneesFromCodeOwners": true,
+	"commitBodyTable": true,
+	"reviewersFromCodeOwners": true,
+	"packageRules": [
+		{
+			"matchManagers": ["custom.regex"],
+			"pinDigests": false
+		},
+		{
+			"matchFileNames": [".github/workflows/**"],
+			"semanticCommitType": "deps",
+			"semanticCommitScope": null
+		},
+		{
+			"matchPackageNames": ["ghcr.io/renovatebot/renovate"],
+			"automerge": true,
+			"ignoreTests": true
+		}
+	]
+}
