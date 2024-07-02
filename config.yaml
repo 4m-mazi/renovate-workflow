@@ -5,6 +5,7 @@ allowedPostUpgradeCommands:
   - "^deno task lume upgrade --version"
   - "^pnpm install --frozen-lockfile --ignore-scripts$"
   - "^pnpm run build$"
+  - "^pnpm run bundle$"
 onboardingConfigFileName: .renovaterc.json
 
 # HACK
