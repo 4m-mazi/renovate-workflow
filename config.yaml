@@ -6,6 +6,8 @@ allowedPostUpgradeCommands:
   - "^pnpm install --frozen-lockfile --ignore-scripts$"
   - "^pnpm run build$"
   - "^pnpm run bundle$"
+  - "^install-tool nix"
+  - "^nix-shell -p deno$"
 onboardingConfigFileName: .renovaterc.json
 
 # HACK
