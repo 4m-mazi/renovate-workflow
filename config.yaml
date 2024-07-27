@@ -6,8 +6,7 @@ allowedPostUpgradeCommands:
   - "^pnpm install --frozen-lockfile --ignore-scripts$"
   - "^pnpm run build$"
   - "^pnpm run bundle$"
-  - "^install-tool nix"
-  - "^nix-shell -p deno$"
+  - '^curl -fsSL https://deno.land/install.sh | sh && export PATH="$HOME/.deno/bin:$PATH"$'
 onboardingConfigFileName: .renovaterc.json
 
 # HACK
