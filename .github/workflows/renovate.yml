@@ -9,7 +9,8 @@ on:
 permissions: {}
 
 env:
-  cache_dir: /tmp/renovate/cache
+  # cache_dir: /tmp/renovate/cache
+  cache_dir: /tmp/renovate/cache/renovate/repository
   cache_key: renovate-cache
   config_file: config.yaml
   # tool versions
