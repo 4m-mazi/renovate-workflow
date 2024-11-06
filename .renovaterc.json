@@ -27,7 +27,7 @@
 		},
 		{
 			"matchPackageNames": ["ghcr.io/renovatebot/renovate"],
-			"automerge": true,
+			"extends": [":automergeMinor"],
 			"ignoreTests": true
 		}
 	]
