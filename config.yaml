@@ -1,18 +1,9 @@
 # yaml-language-server: $schema=https://docs.renovatebot.com/renovate-schema.json
 
 allowedPostUpgradeCommands:
-  - "^corepack use"
   - "^deno task lume upgrade --version"
   - "^pnpm install --frozen-lockfile --ignore-scripts$"
   - "^pnpm run build$"
   - "^pnpm run bundle$"
   - '^curl -fsSL https://deno.land/install.sh | sh && export PATH="$HOME/.deno/bin:$PATH"$'
 onboardingConfigFileName: .renovaterc.json
-
-# HACK
-packageRules:
-  # support corepack integrity
-  - matchDepTypes: [packageManager]
-    postUpgradeTasks:
-      commands:
-        - "corepack use '{{{depName}}}@{{{newVersion}}}'"
