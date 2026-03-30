@@ -58,7 +58,7 @@ jobs:
             ${{ env.config_file }}
           sparse-checkout-cone-mode: false
 
-      - uses: renovatebot/github-action@e23f4d9675532445118c886434f5a34292b630b4 # v46.0.2
+      - uses: renovatebot/github-action@3633cede7d4d4598438e654eac4a695e46004420 # v46.1.7
         with:
           token: ${{ steps.generate_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
