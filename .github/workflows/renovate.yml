@@ -47,7 +47,7 @@ jobs:
           #   [read and write]
           #     repo: Checks, Commit statuses, Contents, Issues, Pull requests, Workflows
           # ──────────────────────────────────────────────────────────────────────────────
-          app-id: ${{ vars.MAZI_RENOVATE_APP_ID }}
+          client-id: ${{ vars.MAZI_RENOVATE_APP_ID }}
           private-key: ${{ secrets.MAZI_RENOVATE_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
 
