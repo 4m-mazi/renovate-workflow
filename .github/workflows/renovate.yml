@@ -14,7 +14,7 @@ env:
   config_file: config.yaml
   # tool versions
   # renovate: datasource=docker depName=renovate packageName=ghcr.io/renovatebot/renovate
-  RENOVATE_VERSION: 44.13.3
+  RENOVATE_VERSION: 44.14.0
 
 jobs:
   renovate:
