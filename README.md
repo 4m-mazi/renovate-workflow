@@ -8,7 +8,7 @@ see [trigger-renovate.yml](.github/workflows/trigger-renovate.yml)
 
 ## 実行するために必要なもの
 
-このワークフローを実行ためには二つのGitHub Appsが必要です。
+このワークフローの実行には二つのGitHub Appsが必要です。
 (同じAppを使っていても動きますが、権限制限の観点から別にしたほうがよいでしょう。)
 
 - Renovate実行用App\
