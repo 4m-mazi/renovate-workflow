@@ -62,14 +62,12 @@ jobs:
         with:
           token: ${{ steps.generate_token.outputs.token }}
           renovate-version: ${{ env.RENOVATE_VERSION }}
-          env-regex: "^(?:RENOVATE_\\w+|FORCE_COLOR|LOG_LEVEL)$"
         env:
           # This enables the cache -- if this is set, it's not necessary to add it to renovate.json.
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.client_payload.repoCache || 'enabled' }}
           RENOVATE_AUTODISCOVER: true # Renovate runs NOT only on this repository.
           RENOVATE_DEPENDENCY_DASHBOARD_FOOTER: "- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository"
           RENOVATE_PLATFORM_COMMIT: true
-          FORCE_COLOR: 3 # chalk.supportsColor
           LOG_LEVEL: debug
 
           # customize
