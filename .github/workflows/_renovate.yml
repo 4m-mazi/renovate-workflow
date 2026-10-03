@@ -23,7 +23,7 @@ on:
         required: false
         type: string
     secrets:
-      app-id:
+      client-id:
         required: true
       private-key:
         required: true
@@ -65,7 +65,7 @@ jobs:
           #   [read and write]
           #     repo: Contents
           # ──────────────────────────────────────────────────
-          app-id: ${{ secrets.app-id }}
+          client-id: ${{ secrets.client-id }}
           private-key: ${{ secrets.private-key }}
           owner: ${{ env.RENOVATE_REPOSITORY_OWNER }}
           repositories: ${{ env.RENOVATE_REPOSITORY_NAME }}
