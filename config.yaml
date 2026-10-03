@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://docs.renovatebot.com/renovate-schema.json
+# yaml-language-server: $schema=https://docs.renovatebot.com/renovate-global-schema.json
 
 allowedPostUpgradeCommands:
   - "^deno task lume upgrade --version"
