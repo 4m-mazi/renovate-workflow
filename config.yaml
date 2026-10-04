@@ -9,4 +9,5 @@ allowedCommands:
 onboardingConfigFileName: .renovaterc.json
 packageRules:
   - matchPackageNames: ["4m-mazi/renovate-workflow"]
-    pinDigests: false
+    force:
+      pinDigests: false
