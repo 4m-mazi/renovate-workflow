@@ -17,10 +17,6 @@
 	"reviewersFromCodeOwners": true,
 	"packageRules": [
 		{
-			"matchPackageNames": ["4m-mazi/renovate-workflow"],
-			"pinDigests": false
-		},
-		{
 			"matchManagers": ["custom.regex"],
 			"pinDigests": false
 		},

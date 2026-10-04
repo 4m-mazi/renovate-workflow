@@ -7,3 +7,6 @@ allowedCommands:
   - "^pnpm run bundle$"
   - '^curl -fsSL https://deno.land/install.sh | sh && export PATH="$HOME/.deno/bin:$PATH"$'
 onboardingConfigFileName: .renovaterc.json
+packageRules:
+  - matchPackageNames: ["4m-mazi/renovate-workflow"]
+    pinDigests: false
